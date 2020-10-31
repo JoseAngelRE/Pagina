@@ -1,12 +1,13 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;  
+    padding: 0;
 }
 
-body{
-    background-color: #FCE9DB;
+body {
+    background-color: #fce9db;
     font-family: 'Oswald', sans-serif;
+    font-size: 24px;
 }
 
 /* Navegacion */
@@ -14,147 +15,198 @@ nav{
     background-color: #E0A899;
 }
 
-.navbar-brand{
+.navbar-brand h1{
     font-family: 'Cinzel Decorative', cursive;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 /* Header Carrusel */
-#carouselExampleIndicators h1{
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #FCE9DB;
-    -webkit-text-stroke: .6px #C99789;
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+    max-height: 90vh;
+    opacity: 75%;
 }
+
+#carouselExampleIndicators h1 {
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 7rem;
+    text-align: left;
+    color: #fce9db;
+    -webkit-text-stroke: 0.6px #c99789;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Promociones */
+
+.container-test {
+    display: flex;
+}
+
+.container-test img {
+    width: 50%;
+    height: 26rem;
+}
+
+.container-test  div{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 4rem 0rem 4rem;
+}
+
+/* #carouselExample .carousel-inner .carousel-item {
+    display: flex;
+}
+#carouselExample .carousel-inner .carousel-item img {
+    width: 50%;
+}
+
+#carouselExample .carousel-inner .carousel-item .text-test {
+    z-index: 1;
+} */
 
 /* Subtitulos */
-.subtitle-1{
+.subtitle-1 {
     text-align: right;
     padding-right: 5em;
-    margin: 50px 0 50px 0;
+    margin: 15rem 0 5rem 0;
 }
 
-.subtitle-1 h1{
-    font-size: 150px;
+.subtitle-1 h1 {
+    font-size: 130px;
     text-transform: uppercase;
-    -webkit-text-stroke: 1px #2C2C2C;
+    -webkit-text-stroke: 1px #2c2c2c;
     color: transparent;
 }
 
-.subtitle-1 h2{
+.subtitle-1 h2 {
     font-size: 80px;
     text-transform: uppercase;
 }
 
-.subtitle{
-    margin: 50px 0 50px 0;
+.subtitle {
+    margin: 15rem 0 5rem 0;
     padding-left: 6em;
 }
 
-.subtitle h1{
+.subtitle h1 {
     font-size: 110px;
     color: transparent;
-    -webkit-text-stroke: 1px #C99789;
+    -webkit-text-stroke: 1px #c99789;
     text-transform: uppercase;
 }
 
-.subtitle h2{
-    color: #C99789;
+.subtitle h2 {
+    color: #c99789;
     font-size: 60px;
     text-transform: uppercase;
 }
 
 /* Servicios */
-.columna-1{
+.columna-1 {
     background: url(img/servicios-1.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-2{
+.columna-2 {
     background: url(img/servicios-2.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-3{
+.columna-3 {
     background: url(img/servicios-3.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-4{
-    background: url(img/servicios-4.jpg) no-repeat center top;
+.columna-4 {
+    background: url(img/pexels-cottonbro-3997983.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-5{
+.columna-5 {
     background: url(img/servicios-5.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-6{
+.columna-6 {
     background: url(img/servicios-6.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-7{
+.columna-7 {
     background: url(img/servicios-7.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-8{
+.columna-8 {
     background: url(img/servicios-8.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-9{
+.columna-9 {
     background: url(img/servicios-9.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-10{
+.columna-10 {
     background: url(img/servicios-10.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-11{
-    background: url(img/servicios-11.jpg) no-repeat center top;
+.columna-11 {
+    background: url(img/cambio.jpg) no-repeat center top;
     background-size: cover;
 }
-.columna-12{
+.columna-12 {
     background: url(img/servicios-12.jpg) no-repeat center top;
     background-size: cover;
 }
 
-.grid{
-    padding-left: 160px;
-    padding-right: 160px;
+.grid {
+    padding-left: 9rem;
+    padding-right: 9rem;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 210px;
+    grid-auto-rows: 30vh;
 }
 
-
-.grid-2{
+.grid-2 {
     margin-top: 30px;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 9rem;
+    padding-right: 9rem;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 210px;
+    grid-auto-rows: 30vh;
 }
 
-.cuadro:hover{
-    opacity: 65%;
-}
-
-.cuadro{
+.cuadro {
     display: flex;
     font-size: 10px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    transition: all .5s ease-out;
+}
+
+.cuadro .ocult {
+    opacity: 0;
+    color: #ffffff;
+    transition: all .5s ease-out;
+}
+
+.cuadro:hover {
+    opacity: 60%;
+}
+
+.cuadro:hover .ocult {
+    opacity: 1;
 }
 
 /* Botones*/
-.boton{
+.boton {
     display: flex;
     justify-content: center;
     margin: 60px 0 60px 0;
 }
 
-.boton a{
-    background-color: #C99789;
+.boton a {
+    background-color: #c99789;
     color: #ffffff;
     text-decoration: none;
     padding: 8px 68px 8px 68px;
@@ -162,54 +214,86 @@ nav{
     font-size: 35px;
 }
 
+.boton a:hover{
+    opacity: 70%;
+}
 /* Nosotros */
-.img-us img{
-    width:350px;
+
+.img-us {
+    position: relative;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.img-us img {
+    position: absolute;
+    width: 350px;
     height: 350px;
 }
+.img-us .img-1 {
+    top: 0;
+    left: 0;
+}
+.img-us .img-2 {
+    top: 0;
+    right: 0;
+}
+.img-us .img-3 {
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
 
-.text-us{
+.text-us {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
-    padding: 0 400px 0 400px;
+}
+
+.text-us p{
+    width: 80%;
 }
 
 /* Ubicacion */
-.Ub{
+.Ub {
     display: flex;
-    background-color: #E0A899;
+    background-color: #e0a899;
     height: 550px;
 }
 
-.ub-p{
+.ub-p {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ub-p p{
+.ub-p p {
     font-size: 25px;
 }
 
-.ub-map{
+.ub-map {
     width: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-.ub-map iframe{
+.ub-map iframe {
     height: 80%;
     width: 90%;
 }
 
 /* Boton Arriba */
 
-#button-up{
+#button-up {
     width: 60px;
     height: 60px;
-    background: #E0A899;
+    background: #e0a899;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,7 +309,7 @@ nav{
     transform: scale(0);
 }
 
-#button-up:hover{
+#button-up:hover {
     transform: scale(1.1);
     border-color: rgba(0, 0, 0, 0.1);
 }
@@ -233,144 +317,190 @@ nav{
 /* Footer */
 
 .up {
-    background-color: #E0A899;
+    background-color: #e0a899;
     display: flex;
     align-content: center;
-    border-bottom: 3px solid #2C2C2C;
+    border-bottom: 3px solid #2c2c2c;
+    font-size: 20px;
 }
 
-.Horario{
+.Horario {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#Contactanos{
+#Contactanos {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-#Contactanos ul li{
+#Contactanos ul li {
     list-style: none;
 }
 
-#Contactanos ul li a{
-    color: #2C2C2C;
+#Contactanos ul li a {
+    color: #2c2c2c;
 }
 
-.under{
+.under {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1050px) {
+    .img-us img {
+        height: 400px;
+        width: 400px;
+        position: static;
+    }
+
+    .img-us {
+        display: grid;
+        grid-template-columns: auto;
+        position: static;
+        justify-content: center;
+        row-gap: 2em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar-brand{
+        font-size: 5px;
+    }
+    /* Header carrusel */
+    #carouselExampleIndicators h1 {
+        font-size: 5rem;
+    }
+    /* Promociones */
+    .container-test {
+        flex-direction: column;
+    }
+    
+    .container-test img {
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .container-test  div{
+        width: 100%;
+        height: 50vh;
+    }
     /* Boton */
-    .boton a{
+    .boton a {
         padding: 8px 10px 8px 10px;
         font-size: 28px;
-    }    
+    }
 
     /* Subtitulos */
-    .subtitle-1{
+    .subtitle-1 {
         padding-right: 15px;
+        margin: 7.5rem 0 2.5rem 0;
     }
-    .subtitle-1 h1{
+    .subtitle-1 h1 {
         font-size: 50px;
     }
-    
-    .subtitle-1 h2{
+
+    .subtitle-1 h2 {
         font-size: 40px;
     }
 
-    .subtitle{
+    .subtitle {
         padding-left: 20px;
+        margin: 7.5rem 0 2.5rem 0;
     }
-    
-    .subtitle h1{
+
+    .subtitle h1 {
         font-size: 40px;
     }
-    
-    .subtitle h2{
+
+    .subtitle h2 {
         font-size: 20px;
     }
     /* Servicios */
 
-    .grid{
-        padding-left: 50px;
-        padding-right: 50px;
+    .grid {
+        padding-left: 12vh;
+        padding-right: 12vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 150px;
+        grid-auto-rows: 30vh;
     }
-    .grid-2{
-        padding-left: 50px;
-        padding-right: 50px;
+    .grid-2 {
+        padding-left: 12vh;
+        padding-right: 12vh;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 150px;
+        grid-auto-rows: 30vh;
     }
     /* Nosotros */
-    .img-us img{
+    .img-us img {
         height: 250px;
         width: 250px;
+        position: static;
     }
-    .img-us{
+
+    .img-us {
         display: grid;
         grid-template-columns: auto;
+        position: static;
         justify-content: center;
         row-gap: 2em;
     }
 
-    .text-us{
-        padding: 0 60px 0 60px;
-    }
     /* Ubicacion */
-    .Ub{
+    .Ub {
         flex-direction: column-reverse;
     }
-    
-    .ub-p{
+
+    .ub-p {
         height: 25%;
         width: 100%;
     }
-    
-    .ub-p p{
+
+    .ub-p p {
         font-size: 20px;
         text-align: center;
     }
-    
-    .ub-map{
+
+    .ub-map {
         height: 75%;
         width: 100%;
     }
 
     /* Footer */
-    .up{
+    .up {
         flex-direction: column;
         align-items: center;
     }
-    .Horario{
+    .Horario {
         width: 100%;
         flex-direction: column;
         justify-content: flex-start;
     }
-    #Contactanos{
+    #Contactanos {
         width: 100%;
-        align-items: unset;
+        align-items: center;
         flex-direction: column;
         justify-content: flex-start;
     }
-    #Contactanos div{
+    #Contactanos div {
         display: flex;
         justify-content: center;
     }
-    #Contactanos ul{
+    #Contactanos ul {
+        width: 60%;
         padding-left: 20px;
     }
-    .under{
+    .under {
         flex-direction: column;
         align-items: center;
-    }    
+    }
+}
+
+@media screen and (max-width: 600px){
+    #carouselExampleIndicators h1 {
+        font-size: 3rem;
+    }
 }
